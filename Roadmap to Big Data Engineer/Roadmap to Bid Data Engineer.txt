@@ -1,0 +1,65 @@
+# How to strategically prepare for a Big Data Enigneer Role
+
+## Roadamap to become a Big Data Engineer
+=================================================
+
+## Pre-requsite
+- SQL
+	- Used in RBBMS, Hive query, Spark query
+	- Required: Joins, window funcitons
+	- Not required: stored procedure, plsql or any other advanced concepts
+- Any Programming Language
+	- Basic level
+	- Recommended: Python (adopted in most technologies), Java, Scala
+	- Logic is hard to learn and not language
+
+## Concepts:
+
+Note: Topics written in BOLD are important for interviews.
+
+- Distributeed Computing
+- HDFS:
+	- Or any other distributed storage like 
+	- Amazon S3, ADLS gen 2)
+- MapReduce:
+	- Gives foundation of distributed computing.
+	- Theroy more imp than practical. 
+	- As Spark has made the implementation easy but core concepts are necessary to know internal details.
+- SQOOP: 
+	- Not imp for interview.
+	- Haiving internal knowledge gives upper hand while learning other iungestion tools.
+- ** HIVE: **
+	- Very Imp
+	- Used by many companies.
+	- However getting replaced by Spark.
+	- Basic knowledge is enough for freshers.
+	- Advanced concepts like optimisation techniques is expected from Senior Engineers.
+- ** HIVE Optimisation **
+- HBASE:
+	- Not so imp for interview
+- ** Integration of Hadoop Components: **
+	- BRING DATA FROM RBMS TO HADOOP ECOSYSTEM USING SCOOP
+	- Create Hive table over it.
+	- Very generic usecase in Big Data
+- ** Spark: **
+	- Focus on Imp topic like RDD
+- ** Spark Performance Tuning: **
+	- V.V.V. Imp
+	- Heart of Big Data
+
+Note: Jobs based on Streaming and Kafka are less in India. However, it is v.v.v. imp for remote jobs
+
+- ** Spark Streaming **
+- KAFKA
+- ** Big Data on AWS cloud: **
+	- It is not mandatory
+	- But, gives a competitive advantag
+	- Athena, S3, Redshift 
+- Airflow:
+	- Not mandatory
+	- Good to know
+
+Data Structure and Algorithm:
+	- Although once a major gatekeeper, the poularity is reduced.
+	- Good to know but not at all mandatory.
+	- Array

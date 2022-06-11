@@ -1,0 +1,147 @@
+# How to draft your BIG-DATA Projects?
+
+## Agenda:
+- Project Category
+- What's expected in interview?
+
+
+## Candidate Category:
+
+- Fresher: (interns or job switch etc):
+	- Gain domain knowledge
+	- Find a problem statement online
+	- Reach out to pre-revenue startup and make them a project for free.
+	- Reach out to experienced Big Data Candidates and ask for advice.
+
+- Partial Experience (ETL, DWH, SQL):
+	- Gain more knowledge of domain.
+	- Try to integrate more Big Data components to existing project.
+	- Make a solid side project to gets hands-on experience.
+	
+- Expereience in Big Data:
+	- You are GOLDEN.
+	- Try to jump from Big Data Engineer to Big Data Architect.
+	- Learn more and more about system design and architecture.
+	- Learn technologies which were not used in your previous work project.
+
+
+## Expectation from a project in Interview.
+
+- Data Architecture (Highest Weightage)
+- Generic Questions
+- Domain Knowledge
+
+
+## Data Architecture: (try to ans in 2-3 mins)
+- Explain entire Data Flow  from source to customer.
+- Tools, frameworks, Technologies
+- Different Layers of Project
+- Work of each layer
+
+
+Check: Big_Data_Layers.jpg and Big_Data_Layers_Tools.jpg
+
+## Project Intro:
+- Explain your Project by answering What, Why and How 
+
+
+## Layer 1: Data Producers
+
+- Source of data 
+	- Transactional:DataBases 
+	- Streaming: AWS RDS, kinesis
+	- Batch: APIs, client Batch files
+- Source of data should align with problem staatement.
+- It should also explain the processing required for it.
+
+
+## Layer 2: Data Ingestion:
+
+- How is daa bought into the Big Data Ecosystem.
+- Tools: 
+	- Sqoop: RDBMS
+	- Kafka: Streaming Data
+	- Flume: logs, batch files
+- Data Ingestion tool should be in accordance with data source.
+
+
+## Layer 3: Data Storage
+
+- Input Storage: Data from source is dumped here using Ingestion tools.
+- No processing is done here.
+- Output Data Storage: Data stored after processing.
+- HDFS, S3, Data Lake, Azure data storage
+- On premises: HDFS
+- Cloud: S3, Azure Dara Store, Redshift
+- DWH: Hive, Data Marts
+
+
+## Layer 4: Data Processing: ** (V.V.V. Imp) **
+
+- Data cleaning and Transformation happens here.
+- Data Cleaning:
+	- Remove Duplicates/Unnecessary Column, standardise data (change data type of source data), fix error, handle null value, fix data formatting
+	- Try to understand the data and divide big file into few small tables.
+	- Haivng more tables makes it easier for cleaning or optimization.
+- Data Transformation:
+	- Most important step in Data Processing and entire project
+	- Transform data as per user requirement.
+	- Hive Transformation:
+		- Partitioning, Bucketing, Row Format ser-de (serialisation-deserialisation), Hive-Join
+	- Spark Transformation:
+		- UDF 
+		- Coalesce
+		- Duplicate Removal
+		- Handling Bad Data
+		- Append/Over-write
+		- Join
+	- Spark Optimisation:
+		- Balanced Executors
+		- Persist method
+		- Salting
+- Stream Data Processing
+
+
+## Data Scheduler:
+- Oozie, Airflow, Tidal
+- Hadoop Job, Hive Job, Sqoop Job, Spark Job, Streaming Job (Real-time)
+- Answer what is the frequency of Job Scheduling.
+- Job dependency cycle i.e. once first job runs then run the current job (data injestion -> batch jobs)
+- give config file, 
+- Give details like:
+	- frquency of execution
+	- alert message
+	- output path
+- Streaming: every 5 mins
+- Batch Files: daily or weekly
+- Analysis Job: Weekly or Monthly
+
+
+## CI/CD Process:
+- Not a part of data piepling.
+- Handles integration and deployment process of data pipeline.
+- Tools: GitHub, Maven, Jenkins, Jira
+- Explain SDLC: req. gathering, design, development, testing, deployment, maintainence
+- Code Integration: git/github, code review, ticket, pull request
+
+
+## Layer 5: Data Consumption  
+- Last Layer of data pipeline.
+- Identify the main consumers.
+- Identify the use of final data
+
+
+## Data Governance (optional)
+- How data is protected
+- Techniques: Encryption, Data Masking, Cyber Security Support, Data Compliance, Data Governance
+- Data Governance:
+	- India: The IT Act
+	- India: PDPA (Public Data Protection Act)
+	- USA: CCPA (California Consumer Privacy Act)
+	- Europe: GDPR (General Data Protection Regulation)
+
+
+## Few Terms:
+
+Upstream: Place from where you get the data.
+Downstream: Place where you send the data. 
